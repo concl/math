@@ -30,7 +30,7 @@ We need 3 angles that describe the rotation of the camera in 3D space, and 3 coo
 
 Here are the angles with a diagram underneath:
 
-$\theta$ : The azimathal angle, or the angle of the direction of the camera projected in the XY plane.
+$\theta$ : The azimuthal angle, or the angle of the direction of the camera projected in the XY plane.
 
 $\phi$ : The polar angle, or the angle from the Z axis.
 
@@ -165,18 +165,18 @@ $$
 \vec{r}_{transformed}(t)
 
 =
-\langle \frac{-\vec{d}_x t - \vec{p_0}_x}{\vec{d}_z t}, \frac{\vec{d}_y t + \vec{p_0}_y}{\vec{d}_z t} \rangle
+\langle \frac{-\vec{d}_x t - \vec{p_0}_x}{\vec{d}_z t + \vec{p_0}_z}, \frac{\vec{d}_y t + \vec{p_0}_y}{\vec{d}_z t + \vec{p_0}_z} \rangle
 
 \\
 
 =
-\frac{1}{\vec{d}_z t}
+\frac{1}{\vec{d}_z t + \vec{p_0}_z}
 \langle -\vec{d}_x t - \vec{p_0}_x, \vec{d}_y t + \vec{p_0}_y \rangle
 
 \end{aligned}
 $$
 
-which also parametrizes a line in 2D space (that has a singularity at $t=0$).
+which also parametrizes a line in 2D space (that has a singularity at $\vec{d}_z t + \vec{p_0}_z=0$).
 
 This means that lines in 3D space always remain straight when projected onto a 2D screen.
 
