@@ -72,6 +72,7 @@ $$
                 &= \sum_\tau \mathbb{P}(\tau|\pi(\theta)) \ \sum_{t=0}^{T-1} \nabla_\theta \log \pi_\theta(a_t|s_t) \ R(\tau) \\
                 &= \mathbb{E}[ \ \sum_{t=0}^{T-1} \nabla_\theta \log \pi_\theta(a_t|s_t) \ R(\tau) \ ]
 \end{align}
-\\
+$$
+$$
 \therefore \nabla_\theta J = \mathbb{E}\left[ \ \sum_{t=0}^{T-1} \nabla_\theta \log \pi_\theta(a_t|s_t) \ R(\tau) \ \right]
 $$
