@@ -64,7 +64,6 @@ $$
 Revisiting equation 1, we can use the facts derived above to find a usable formula for $\nabla_\theta J(\theta)$:
 
 $$
-
 \begin{align}
 \nabla_\theta J &= \nabla_\theta \mathbb{E}[R(\tau) | \pi(\theta)] \\
                 &= \nabla_\theta \sum_\tau \mathbb{P}(\tau|\pi(\theta)) R(\tau) \\
